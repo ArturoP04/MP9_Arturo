@@ -1,0 +1,1 @@
+{"version":3,"sources":["clip-path.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"clip-path.42f35c3b.css","sourceRoot":"..\\src","sourcesContent":[".clip-path-bot {\r\n  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);\r\n}\r\n\r\n.clip-path-top {\r\n  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);\r\n}\r\n"]}

@@ -1,0 +1,5 @@
+{
+  "htmlWhitespaceSensitivity": "strict",
+  "wrapAttributes": "preserve-inline",
+  "printWidth": 120
+}
