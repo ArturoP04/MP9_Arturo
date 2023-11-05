@@ -3,7 +3,6 @@ module.exports = {
   mode: "jit",
   purge: ["./src/**/*.{vue,js,ts,jsx,tsx}"],
   content: ["./src/**/*.{html,js}"],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: {
