@@ -8,6 +8,9 @@ module.exports = {
         "hero-pattern": "url('/src/img/hero2.webp')",
         "footer-texture": "url('/src/img/vinyl1.jpg')",
       },
+      fontFamily: { 
+        "josefin": ['Josefin', 'sans-serif'] 
+    } 
     },
   },
   variants: {

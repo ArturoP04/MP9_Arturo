@@ -1,106 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Arturo Pérez" />
-    <meta name="keywords" content="HTML, CSS, JavaScript, Music" />
-    <meta http-equiv="refresh" content="30" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Buy any kind of vintage music" />
-    <title>Tailwind CSS with Parcel</title>
-    <link rel="stylesheet" href="./clip-path.css" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
-  <body class="flex flex-col justify-between">
-    <header class="w-[100%] h-[3em] p-5 flex flex-row justify-between bg-slate-500">
-      <div class="flex flex-row items-center">
-        <!-- Left -->
-        <div class="w-[1em] h-[1em] justify-center items-center inline-flex">
-          <div class="w-[47.52px] h-[43.52px]">
-            <img src="./img/Python-logo-notext.svg (1).png" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Arturo Pérez" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Music" />
+  <meta http-equiv="refresh" content="30" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Buy any kind of vintage music" />
+  <title>Tailwind CSS with Parcel</title>
+  <link rel="stylesheet" href="./clip-path.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body class="flex flex-col justify-between">
+  <header class="w-[100%] h-[69px] border-b-2 font-josefin border-black p-5 flex flex-row justify-between relative bg-orange-600">
+    <div class="flex flex-row items-center">
+      <!-- Left -->
+      <div class="w-12 h-11justify-center items-center inline-flex">
+        <div class="w-[47.52px] h-[43.52px] relative">
+          <img src="./img/Logo.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-5 flex-row items-center">
+      <!-- Right -->
+      <div class="text-black text-lg font-bold "><a href="./aboutUs.html">About us</a></div>
+      <div class="text-black text-lg font-bold "><a href="./products.html">Products</a></div>
+      <a href="./main.html"><img src="./img/shopping-cart (1).svg" alt="" /></a>
+    </div>
+  </header>
+
+  <main class="flex flex-col">
+    <div id="hero" style="background-image: url(./img/hero.jpg); background-repeat: no-repeat; background-size: cover;"
+      class="flex flex-row flex-grow">
+      <div id="filler-left" class="flex flex-grow">
+      </div>
+      <div id="content-right" class="flex flex-col p-6 place-content-center">
+        <h1 class="text-4xl font-bold mb-4">Welcome!</h1>
+        <p class="text-3xl mb-4">Buy any kind of vintage music</p>
+        <div id="buttons" class="flex flex-col justify-center gap-3">
+          <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded w-fit">Buy</a>
+          <a href="#" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded w-fit">About us</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-gray-200 p-5">
+      <div class="p-6">
+        <h1 class="text-3xl font-bold mb-2">Our latest products</h1>
+        <p class="text-lg">Here you can see our latest products</p>
+      </div>
+      <article class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <section class="flex flex-col bg-white rounded-lg items-center justify-center p-6">
+          <img class="w-1/3 md:w-full" src="./img/vinyl1.jpg" alt="Product 1" />
+          <div class="grid grid-cols-1 w-1/2 md:w-full">
+            <h2 class="text-2xl font-bold mb-2">Classic Vinyl Collection</h2>
+            <p class="mb-4">Immerse yourself in the timeless tunes of our handpicked classic vinyl records. Rediscover
+              the magic of legendary artists and iconic albums. From the soulful melodies of jazz to the rebellious
+              spirit of rock 'n' roll, our collection encapsulates the golden era of music.</p>
+              <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Learn More</a>
           </div>
-        </div>
-      </div>
+        </section>
 
-      <div class="flex gap-5 flex-row items-center">
-        <!-- Right -->
-        <div class="hidden sm:text-black sm:text-sm sm:font-bold sm:font-['Inter']"
-          ><a href="./aboutUs.html">About us</a>
-        </div>
-        <div class="hidden sm:text-black sm:text-sm sm:font-bold sm:font-['Inter']"
-          ><a href="./products.html">Products</a>
-        </div>
-        <a class="hidden sm:text-black sm:text-sm sm:font-bold sm:font-['Inter']" href="./main.html"
-          ><img src="./img/shopping-cart (1).svg" alt=""
-        /></a>
-        <a class="flex gap-5 flex-row items-center sm:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </a>
-      </div>
-    </header>
-    <main class="flex flex-col">
-      <div id="hero" style="background-image: url(./img/hero.jpg)" class="flex flex-row">
-        <div id="filler-left" class="flex grow"> </div>
-        <div id="content-right" class="flex flex-col">
-          <h1>Welcome!</h1>
-          <p>Buy any kind of vintage music</p>
-          <div id="buttons" class="">
-            <a href="#">Buy</a>
-            <a href="#">About us</a>
+        <section class="flex flex-col bg-white rounded-lg items-center justify-center p-6">
+          <img class="w-1/2 md:w-full" src="./img/vinyl1.jpg" alt="Product 2" />
+          <div class="grid grid-cols-1 w-1/2 md:w-full">
+            <h2 class="text-2xl font-bold mb-2">Limited Edition Vinyl Series</h2>
+            <p class="mb-4">Indulge in the allure of our exclusive limited edition vinyl series. Elevate your collection
+              with unique and rare records that resonate with true vinyl enthusiasts. Each record is a piece of art,
+              meticulously crafted to deliver an unparalleled auditory experience. Immerse yourself in the world of
+              limited edition sonic treasures.</p>
+            <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Learn More</a>
           </div>
-        </div>
-      </div>
+        </section>
 
-      <article>
-        <div class="my-10">
-          <h1 class="text-3xl font-bold mb-2">Our latest products</h1>
-          <p class="text-lg">Here you can see our latest products</p>
-        </div>
-        <div class="flex flex-col md:flex-row md:flex-wrap">
-          <section class="flex flex-col md:flex-row md:items-center md:justify-center md:gap-10">
-            <img class="w-full md:w-1/2" src="./img/vinyl1.jpg" alt="Product 1" />
-            <div class="w-full md:w-1/2">
-              <h2 class="text-2xl font-bold mb-2">Product name</h2>
-              <p class="mb-4">Product description</p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Buy now</button>
-            </div>
-          </section>
-          <section class="flex flex-col md:flex-row md:items-center md:justify-center md:gap-10">
-            <img class="w-full md:w-1/2" src="./img/vinyl1.jpg" alt="Product 2" />
-            <div class="w-full md:w-1/2">
-              <h2 class="text-2xl font-bold mb-2">Product name</h2>
-              <p class="mb-4">Product description</p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Buy now</button>
-            </div>
-          </section>
-          <section class="flex flex-col md:flex-row md:items-center md:justify-center md:gap-10">
-            <img class="w-full md:w-1/2" src="./img/vinyl1.jpg" alt="Product 3" />
-            <div class="w-full md:w-1/2">
-              <h2 class="text-2xl font-bold mb-2">Product name</h2>
-              <p class="mb-4">Product description</p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Buy now</button>
-            </div>
-          </section>
-        </div>
+        <section class="flex flex-col bg-white rounded-lg items-center justify-center p-6">
+          <img class="w-1/2 md:w-full" src="./img/vinyl1.jpg" alt="Product 3" />
+          <div class="grid grid-cols-1 w-1/2 md:w-full">
+            <h2 class="text-2xl font-bold mb-2">Modern Vibes Vinyl Set</h2>
+            <p class="mb-4">Experience the cutting-edge sounds of our modern vibes vinyl set. Elevate your audio journey
+              with the latest and most eclectic selection of vinyl records. From electronic beats that make you move to
+              soul-stirring indie melodies, this set is a testament to the diversity of contemporary music. Join us on a
+              sonic adventure through the sounds of today.</p>
+              <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Learn More</a>
+          </div>
+        </section>
       </article>
-    </main>
-    <footer class="w-[100%] p-5 bg-slate-500 flex justify-between flex-wrap flex-row relative">
-      <a href="./aboutUs.html">
-        <div class="text-black text-sm font-bold font-['Inter']">About us</div>
-      </a>
-      <a href="./products.html">
-        <div class="text-black text-sm font-bold font-['Inter']">Products</div>
-      </a>
-      <div class="flex flex-row items-center gap-1">
-        <a href="./main.html"
-          ><img src="./img/Python-logo-notext.svg (1).png" class="w-[2em] h-[2em] relative" alt="" />Company Name</a
-        >
-      </div>
-      <div class="text-black text-sm font-bold font-['Inter'] flex flex-row items-center gap-1">
-        <img class="w-[2em] h-[2em] relative" src="./img/Python-logo-notext.svg (1).png" alt="" />
-        Go up
-      </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer class="w-[100%] p-5 bg-orange-600 border-t-2 border-black flex font-josefin justify-between flex-wrap flex-row relative">
+    <div class="text-black text-sm font-bold ">Home</div>
+    <div class="text-black text-sm font-bold ">Products</div>
+    <div class="flex flex-row items-center gap-1">
+      <img src="./img/Logo.svg" class="w-[2em] h-[2em] relative" alt="" />Company Name
+    </div>
+    <div class="text-black text-sm font-bold  flex flex-row items-center gap-1">
+      <img class="w-[2em] h-[2em] relative" src="./img/up-arrow.svg" alt="" />
+      Go up
+    </div>
+  </footer>
+</body>
+
 </html>
