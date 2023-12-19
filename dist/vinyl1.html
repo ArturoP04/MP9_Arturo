@@ -14,6 +14,7 @@
   <body>
     <header class="w-[100%] h-[69px] border-b-2 font-josefin border-black p-5 flex flex-row justify-between relative bg-orange-600">
       <div class="flex flex-row items-center">
+        <!-- Left -->
         <div class="w-12 h-11justify-center items-center inline-flex">
           <div class="w-[47.52px] h-[43.52px] relative">
             <img src="/Logo.22c90160.svg" alt="">
@@ -21,9 +22,15 @@
         </div>
       </div>
       <div class="flex gap-5 flex-row items-center">
-        <div class="text-black text-lg font-bold "><a href="/main.html">Home</a></div>
-        <div class="text-black text-lg font-bold "><a href="/aboutUs.html">About us</a></div>
-        <a href="/main.html"><img src="/shopping-cart%20(1).78c7606f.svg" alt=""></a>
+        <!-- Right -->
+        <div class="md:flex hidden lg:text-black lg:text-lg lg:font-bold"><a href="/aboutUs.html">About us</a></div>
+        <div class="md:flex hidden lg:text-black lg:text-lg lg:font-bold"><a href="/products.html">Products</a></div>
+        <a class="md:flex hidden lg:text-black" href="/main.html"><img src="/shopping-cart%20(1).78c7606f.svg" alt=""></a>
+        <div class="sm:cursor-pointer p-4 md:hidden">
+          <div class="bar bg-black h-1 w-6 mb-1"></div>
+          <div class="bar bg-black h-1 w-6 mb-1"></div>
+          <div class="bar bg-black h-1 w-6"></div>
+        </div>
       </div>
     </header>
     <main>

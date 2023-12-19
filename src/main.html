@@ -29,9 +29,14 @@
       </div>
       <div class="flex gap-5 flex-row items-center">
         <!-- Right -->
-        <div class="text-black text-lg font-bold"><a href="./aboutUs.html">About us</a></div>
-        <div class="text-black text-lg font-bold"><a href="./products.html">Products</a></div>
-        <a href="./main.html"><img src="./img/shopping-cart (1).svg" alt="" /></a>
+        <div class="md:flex hidden lg:text-black lg:text-lg lg:font-bold"><a href="./aboutUs.html">About us</a></div>
+        <div class="md:flex hidden lg:text-black lg:text-lg lg:font-bold"><a href="./products.html">Products</a></div>
+        <a class="md:flex hidden lg:text-black" href="./main.html"><img src="./img/shopping-cart (1).svg" alt="" /></a>
+        <div class="sm:cursor-pointer p-4 md:hidden">
+          <div class="bar bg-black h-1 w-6 mb-1"></div>
+          <div class="bar bg-black h-1 w-6 mb-1"></div>
+          <div class="bar bg-black h-1 w-6"></div>
+        </div>
       </div>
     </header>
 
@@ -114,7 +119,7 @@
       </section>
     </main>
     <footer
-      class="w-[100%] p-5 bg-orange-600 border-t-2 border-black flex font-josefin justify-between flex-wrap flex-row relative"
+      class="sm:flex sm:flex-col sm:items-center sm:gap-5 w-[100%] p-5 bg-orange-600 border-t-2 border-black flex font-josefin justify-between flex-wrap md:flex-row relative"
     >
       <div class="text-black text-sm font-bold">Home</div>
       <div class="text-black text-sm font-bold">Products</div>

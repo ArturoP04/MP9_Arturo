@@ -1,130 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arturo Pérez">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Music">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy any kind of vintage music">
+    <title>Tailwind CSS with Parcel</title>
+    <link rel="stylesheet" href="/main.7cc48a2a.css">
+    <link rel="stylesheet" href="/main.4d663569.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Arturo Pérez">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Music">
-  <meta http-equiv="refresh" content="30">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Buy any kind of vintage music">
-  <title>Tailwind CSS with Parcel</title>
-  <link rel="stylesheet" href="/main.7cc48a2a.css">
-  <link rel="stylesheet" href="/main.4d663569.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&display=swap" rel="stylesheet">
-</head>
-
-<body class="flex flex-col justify-between">
-
-  <header class="w-[100%] h-[69px] border-b-2 font-josefin border-black p-5 flex flex-row justify-between relative bg-orange-600">
-    <div class="flex flex-row items-center">
-      <!-- Left -->
-      <div class="w-12 h-11justify-center items-center inline-flex">
-        <div class="w-[47.52px] h-[43.52px] relative">
-          <img src="/Logo.22c90160.svg" alt="">
+  <body class="flex flex-col justify-between">
+    <header class="w-[100%] h-[69px] border-b-2 font-josefin border-black p-5 flex flex-row justify-between relative bg-orange-600">
+      <div class="flex flex-row items-center">
+        <!-- Left -->
+        <div class="w-12 h-11justify-center items-center inline-flex">
+          <div class="w-[47.52px] h-[43.52px] relative">
+            <img src="/Logo.22c90160.svg" alt="">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="flex gap-5 flex-row items-center">
-      <!-- Right -->
-      <div class="text-black text-lg font-bold "><a href="/main.html">Home</a></div>
-      <div class="text-black text-lg font-bold "><a href="/products.html">Products</a></div>
-      <a href="/main.html"><img src="/shopping-cart%20(1).78c7606f.svg" alt=""></a>
-    </div>
-  </header>
-
-  <main class="flex flex-col font-josefin">
-    <article class="container mt-5 w-full mx-auto place-content-center">
-
-      <h1 class="text-3xl font-bold mb-4">About us</h1>
-      <img class="w-full object-cover h-[8em] mb-4" src="/hero.61fef799.jpg" alt="">
-      <p class="font-josefin mb-4">Welcome to Your Vinyl Haven, where the enchanting world of vinyl records comes to life.
-        Our passion for music and commitment to preserving the timeless charm of vinyl records inspired us to create a
-        haven for music enthusiasts, collectors, and those new to the vinyl experience.</p>
-      <div class="mb-4 text-center">
-        <h3 class="text-xl font-bold mb-2">At Your Vinyl Haven, we are more than just a vinyl store, we are your go-to
-          destination for all things vinyl.</h3>
-        <hr class="mb-2">
-        <h4 class="text-lg font-bold">Tom - Founder</h4>
+      <div class="flex gap-5 flex-row items-center">
+        <!-- Right -->
+        <div class="md:flex hidden lg:text-black lg:text-lg lg:font-bold"><a href="/aboutUs.html">About us</a></div>
+        <div class="md:flex hidden lg:text-black lg:text-lg lg:font-bold"><a href="/products.html">Products</a></div>
+        <a class="md:flex hidden lg:text-black" href="/main.html"><img src="/shopping-cart%20(1).78c7606f.svg" alt=""></a>
+        <div class="sm:cursor-pointer p-4 md:hidden">
+          <div class="bar bg-black h-1 w-6 mb-1"></div>
+          <div class="bar bg-black h-1 w-6 mb-1"></div>
+          <div class="bar bg-black h-1 w-6"></div>
+        </div>
       </div>
+    </header>
 
-    </article>
-
-    <article class="bg-gray-200 p-5">
-      <section class="container mb-6 p-4 bg-white rounded-lg flex-row flex-wrap w-full mx-auto gap-10">
-        <div class="flex flex-row">
-          <div class="flex flex-col justify-between gap-3">
-            <h2 class="text-xl font-bold mb-2">Quality Assurance:</h2>
-            <p class="mb-4">We take the condition of our vinyl records seriously. Each record is carefully inspected,
-              cleaned, and graded to ensure that you receive the highest quality product.</p>
-
-            <p class="mb-4">Our commitment to delivering exceptional quality starts with a rigorous examination process.
-              Every vinyl undergoes a detailed inspection to identify any imperfections or anomalies that might affect
-              its playability or visual appeal.</p>
-
-            <p class="mb-4">Once the inspection is complete, our dedicated team meticulously cleans each record using
-              industry-leading techniques. We believe that a clean vinyl not only enhances its aesthetic appeal but also
-              contributes to a superior audio experience, allowing you to fully immerse yourself in the magic of analog
-              sound.</p>
-
-            <p class="mb-4">Beyond inspection and cleaning, we implement a robust grading system. This system
-              categorizes each record based on its condition, giving you a transparent overview of its wear and tear.
-              Whether you're a seasoned collector or a newcomer to vinyl, our grading system empowers you to make
-              informed decisions about your purchase.</p>
-
-            <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Learn More</a>
-          </div>
-          <img class="max-w-md ml-4" src="/hero.61fef799.jpg" alt="">
+    <main class="flex flex-col font-josefin">
+      <article class="container mt-5 w-full mx-auto place-content-center">
+        <h1 class="text-3xl font-bold mb-4">About us</h1>
+        <img class="w-full object-cover h-[8em] mb-4" src="/hero.61fef799.jpg" alt="">
+        <p class="font-josefin mb-4">Welcome to Your Vinyl Haven, where the enchanting world of vinyl records comes to life. Our passion for music
+          and commitment to preserving the timeless charm of vinyl records inspired us to create a haven for music
+          enthusiasts, collectors, and those new to the vinyl experience.</p>
+        <div class="mb-4 text-center">
+          <h3 class="text-xl font-bold mb-2">At Your Vinyl Haven, we are more than just a vinyl store, we are your go-to destination for all things
+            vinyl.</h3>
+          <hr class="mb-2">
+          <h4 class="text-lg font-bold">Tom - Founder</h4>
         </div>
-      </section>
+      </article>
 
-      <section class="container mb-6 p-4 bg-white rounded-lg flex-row flex-wrap w-full mx-auto gap-10">
-        <div class="flex flex-row">
-          <img class="max-w-md mr-4" src="/hero.61fef799.jpg" alt="">
-          <div class="flex flex-col justify-between gap-3">
-            <h2 class="text-xl font-bold mb-2">Passion for Music:</h2>
-            <p class="mb-4">At our vinyl store, music is more than just a product; it's a passion. We are dedicated
-              enthusiasts who curate our collection with love and care, ensuring that every record tells a unique
-              musical story. Our commitment to the art of vinyl extends beyond selling — it's about sharing the joy of
-              music with fellow aficionados.</p>
-            <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Discover Our
-              Passion</a>
+      <article class="bg-gray-200 p-5">
+        <section class="container mb-6 p-4 bg-white rounded-lg flex-row flex-wrap w-full mx-auto gap-10">
+          <div class="flex flex-row">
+            <div class="flex flex-col justify-between gap-3">
+              <h2 class="text-xl font-bold mb-2">Quality Assurance:</h2>
+              <p class="mb-4">We take the condition of our vinyl records seriously. Each record is carefully inspected, cleaned, and
+                graded to ensure that you receive the highest quality product.</p>
+
+              <p class="mb-4">Our commitment to delivering exceptional quality starts with a rigorous examination process. Every
+                vinyl undergoes a detailed inspection to identify any imperfections or anomalies that might affect its
+                playability or visual appeal.</p>
+
+              <p class="mb-4">Once the inspection is complete, our dedicated team meticulously cleans each record using
+                industry-leading techniques. We believe that a clean vinyl not only enhances its aesthetic appeal but
+                also contributes to a superior audio experience, allowing you to fully immerse yourself in the magic of
+                analog sound.</p>
+
+              <p class="mb-4">Beyond inspection and cleaning, we implement a robust grading system. This system categorizes each
+                record based on its condition, giving you a transparent overview of its wear and tear. Whether you're a
+                seasoned collector or a newcomer to vinyl, our grading system empowers you to make informed decisions
+                about your purchase.</p>
+
+              <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Learn More</a>
+            </div>
+            <img class="max-w-md ml-4" src="/hero.61fef799.jpg" alt="">
           </div>
-        </div>
-      </section>
-      <section class="container mb-6 p-4 bg-white rounded-lg flex-row flex-wrap w-full mx-auto gap-10">
-        <div class="flex flex-row">
-          <div class="flex flex-col justify-between gap-3">
-            <h2 class="text-xl font-bold mb-2">Eco-Friendly Vinyl Experience:</h2>
-            <p class="mb-4">Our commitment to music goes hand in hand with our dedication to the environment. We strive
-              to provide a sustainable vinyl experience by using eco-friendly packaging and promoting responsible
-              practices. From recycled materials to energy-efficient operations, we're passionate about reducing our
-              ecological footprint while delivering an exceptional vinyl experience to your doorstep.</p>
-            <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Go Green with
-              Vinyl</a>
+        </section>
+
+        <section class="container mb-6 p-4 bg-white rounded-lg flex-row flex-wrap w-full mx-auto gap-10">
+          <div class="flex flex-row">
+            <img class="max-w-md mr-4" src="/hero.61fef799.jpg" alt="">
+            <div class="flex flex-col justify-between gap-3">
+              <h2 class="text-xl font-bold mb-2">Passion for Music:</h2>
+              <p class="mb-4">At our vinyl store, music is more than just a product; it's a passion. We are dedicated enthusiasts who
+                curate our collection with love and care, ensuring that every record tells a unique musical story. Our
+                commitment to the art of vinyl extends beyond selling — it's about sharing the joy of music with fellow
+                aficionados.</p>
+              <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Discover Our Passion</a>
+            </div>
           </div>
-          <img class="max-w-md ml-4" src="/hero.61fef799.jpg" alt="">
-        </div>
-      </section>
-    </article>
+        </section>
+        <section class="container mb-6 p-4 bg-white rounded-lg flex-row flex-wrap w-full mx-auto gap-10">
+          <div class="flex flex-row">
+            <div class="flex flex-col justify-between gap-3">
+              <h2 class="text-xl font-bold mb-2">Eco-Friendly Vinyl Experience:</h2>
+              <p class="mb-4">Our commitment to music goes hand in hand with our dedication to the environment. We strive to provide
+                a sustainable vinyl experience by using eco-friendly packaging and promoting responsible practices. From
+                recycled materials to energy-efficient operations, we're passionate about reducing our ecological
+                footprint while delivering an exceptional vinyl experience to your doorstep.</p>
+              <a href="#" class="w-fit bg-orange-600 text-white py-2 px-4 rounded hover:bg-gray-800">Go Green with Vinyl</a>
+            </div>
+            <img class="max-w-md ml-4" src="/hero.61fef799.jpg" alt="">
+          </div>
+        </section>
+      </article>
+    </main>
 
-
-
-  </main>
-
-  <footer class="w-[100%] p-5 bg-orange-600 border-t-2 border-black flex font-josefin justify-between flex-wrap flex-row relative">
-    <div class="text-black text-lg font-bold ">Home</div>
-    <div class="text-black text-lg font-bold ">Products</div>
-    <div class="flex flex-row items-center gap-1">
-      <img src="/Logo.22c90160.svg" class="w-[2em] h-[2em] relative" alt="">Company Name
-    </div>
-    <div class="text-black text-lg font-bold  flex flex-row items-center gap-1">
-      <img class="w-[2em] h-[2em] relative" src="/up-arrow.10c2d543.svg" alt="">
-      Go up
-    </div>
-  </footer>
-<script src="/aboutUs.9e5a889c.js"></script></body>
-
+    <footer class="sm:flex sm:flex-col sm:items-center sm:gap-5 w-[100%] p-5 bg-orange-600 border-t-2 border-black flex font-josefin justify-between flex-wrap md:flex-row relative">
+      <div class="text-black text-lg font-bold">Home</div>
+      <div class="text-black text-lg font-bold">Products</div>
+      <div class="flex flex-row items-center gap-1">
+        <img src="/Logo.22c90160.svg" class="w-[2em] h-[2em] relative" alt="">Company Name
+      </div>
+      <div class="text-black text-lg font-bold flex flex-row items-center gap-1">
+        <img class="w-[2em] h-[2em] relative" src="/up-arrow.10c2d543.svg" alt="">
+        Go up
+      </div>
+    </footer>
+  <script src="/aboutUs.9e5a889c.js"></script></body>
 </html>
